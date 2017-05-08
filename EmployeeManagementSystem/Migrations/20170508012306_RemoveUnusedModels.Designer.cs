@@ -8,9 +8,10 @@ using EmployeeManagementSystem.Models;
 namespace EmployeeManagementSystem.Migrations
 {
     [DbContext(typeof(EmpManageContext))]
-    partial class EmpManageContextModelSnapshot : ModelSnapshot
+    [Migration("20170508012306_RemoveUnusedModels")]
+    partial class RemoveUnusedModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.1")

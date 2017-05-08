@@ -5,7 +5,9 @@ namespace EmployeeManagementSystem.Infrastructure.Config
 {
     public static class StructureMapInitializer
     {
-        public static IWebHostBuilder ConfigStructureMap(this IWebHostBuilder builder) // do i need this to extend my application further?
+        // do i need this to extend my application further? 
+        // maybe i should just leave UseStructureMap in Program.cs?
+        public static IWebHostBuilder ConfigStructureMap(this IWebHostBuilder builder) 
         {
             builder.UseStructureMap();
             return builder;

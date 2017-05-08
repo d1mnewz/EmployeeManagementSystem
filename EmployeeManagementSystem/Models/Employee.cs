@@ -11,8 +11,6 @@ namespace EmployeeManagementSystem.Models
 
         public int Salary { get; set; }
 
-        public List<Skill> Skills { get; set; } = new List<Skill>();
-
         public int Id { get; set; }
 
         public string Position { get; set; }
